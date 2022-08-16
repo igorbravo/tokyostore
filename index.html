@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="imagex/png" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title> Neo Tokyo  </title>
+</head>
+
+<body>
+<div id="logo"> 
+<img src="neotokyo.png">
+</div>
+  <div class="header">
+
+    <ul id=botoes>
+    
+      <li> <a href="index.html">Home</a> </li>
+      <li> <a href="#box">boxes</a> </li>
+      <li> <a href="#text"> About us</a> </li>
+      <li> <a href="form.html"> Register</a> </li>
+    </ul>
+
+  </div> <!-- botoes -->
+  </div> <!-- header -->
+
+  <div class="slideIndex">
+    <img class="mySlides" src="models1.jpg">
+    <img class="mySlides" src="1.jpg">
+    <img class="mySlides" src="3.jpg">
+    <img class="mySlides" src="model2.jpg">
+  </div>
+  <button class="botaoo1" onclick="plusDivs(-1)">&#10094;</button>
+
+
+  <button class="botaoo2" onclick="plusDivs(1)">&#10095;</button>
+
+
+
+
+  <div id="box">
+
+    <div class="caixa">
+      <h2> box1 </h2>
+      Nulla a arcu ut ante condimentum dignissim ac non quam. Proin vulputate sed massa at elementum. Curabitur egestas
+      in urna vitae laoreet. Aliquam mauris lorem, molestie vel feugiat vitae, interdum sed felis. Aliquam nec mattis
+      ex. Praesent vitae rutrum ipsum. Donec id sem non tellus mattis placerat vel vel dolor. Vivamus convallis diam
+      ipsum, eu sagittis tellus feugiat id. Nam mollis diam ipsum, vel vehicula magna pellentesque quis. Curabitur nec
+      neque ac lacus pharetra tempor at id magna. Integer at luctus metus.
+    </div>
+    <div class="caixa">
+      <h2> box2 </h2>
+      Nulla a arcu ut ante condimentum dignissim ac non quam. Proin vulputate sed massa at elementum. Curabitur egestas
+      in urna vitae laoreet. Aliquam mauris lorem, molestie vel feugiat vitae, interdum sed felis. Aliquam nec mattis
+      ex. Praesent vitae rutrum ipsum. Donec id sem non tellus mattis placerat vel vel dolor. Vivamus convallis diam
+      ipsum, eu sagittis tellus feugiat id. Nam mollis diam ipsum, vel vehicula magna pellentesque quis. Curabitur nec
+      neque ac lacus pharetra tempor at id magna. Integer at luctus metus.
+    </div>
+    <div class="caixa">
+      <h2> box3 </h2>
+      Nulla a arcu ut ante condimentum dignissim ac non quam. Proin vulputate sed massa at elementum. Curabitur egestas
+      in urna vitae laoreet. Aliquam mauris lorem, molestie vel feugiat vitae, interdum sed felis. Aliquam nec mattis
+      ex. Praesent vitae rutrum ipsum. Donec id sem non tellus mattis placerat vel vel dolor. Vivamus convallis diam
+      ipsum, eu sagittis tellus feugiat id. Nam mollis diam ipsum, vel vehicula magna pellentesque quis. Curabitur nec
+      neque ac lacus pharetra tempor at id magna. Integer at luctus metus.
+    </div>
+  </div> <!-- box -->
+
+  <div class="about">
+    <div id="photo">
+      <img src="modelo3.png">
+    </div> <!-- photo -->
+    <div id="text">
+      <h2> About us </h2>
+      <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+        Donec ullamcorper erat sit amet est pharetra
+        tristique. Aenean vel tellus volutpat,
+        tristique massa ut, rutrum ante. Integer dui
+        tortor, imperdiet eu urna quis, tincidunt
+        aliquam nisi. Curabitur lectus nisi, dignissim
+        sed tempus sit amet, convallis sed libero.
+        Aenean ut massa metus. Duis fringilla, nulla
+        eget suscipit fringilla, augue arcu finibus
+        dolor, at laoreet dolor nibh nec nunc.
+        Donec turpis diam, feugiat et leo vitae,
+        feugiat porttitor ipsum. Nunc at feugiat
+        purus, at egestas ante. Suspendisse
+        vehicula varius urna ut mattis.
+        Nulla non porta felis. Sed quis
+        Fusce elit ex, varius eu tempor vitae, feugiat a nibh. Quisque vehicula sem in felis convallis, ac euismod justo
+        sagittis. Fusce et commodo nibh. Sed a porttitor metus, eget dictum risus. Proin ullamcorper massa non lacus
+        ullamcorper iaculis. Nullam dictum quam vitae magna feugiat scelerisque. Mauris id pharetra nulla. Proin dapibus
+        quam augue, ut euismod sem ultricies a. Donec interdum ornare semper. Ut in commodo urna. Sed eget lorem in enim
+        laoreet bibendum. Ut eget sem nulla. Nam urna nisl, cursus sed tempus at, mattis at nisl. Quisque non orci ut
+        ipsum sodales pretium ut et ex. Quisque sagittis nibh velit, a ultrices tellus congue at.
+        est eu tellus lacinia bibendum at eu quam.
+      </p>
+      <div class="buttonregister">
+        <button onclick="window.location.href = 'form.html'" class="buttonform">REGISTER NOW</button>
+    
+      </div> <!-- buttonregister -->
+    </div> <!-- text -->
+  </div>
+
+  <div class="footer">
+    <span> made by Igor Bravo </span>
+  </div> <!-- footer -->
+</body>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+</html>

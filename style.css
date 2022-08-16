@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #01090C;
+    scroll-behavior: smooth;
+}
+
+.container {
+background-color: white;
+height: 100%;
+}
+
+#logo {
+position: absolute;
+margin-left: 50px;
+height: 200px;
+width:300px;
+padding-bottom: 140px;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: Courier New;
+}
+
+.header {
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+#botoes {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    list-style: none;
+}
+
+a {
+    font-family: 'Bebas Neue', cursive;
+    padding-right: 60px;
+    line-height: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+ul li:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+
+
+.buttonregister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 60%; */
+    padding: 0;
+    margin-top: 20px;
+}
+
+.buttonform:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+}
+
+
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+box-sizing: border-box;
+}
+
+.botaoo1 {
+
+    float: left;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 28px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    font-family: Courier New;
+    font-size: 17px;
+    text-decoration: none;
+    text-shadow: -1px 1px 50px #2f6627;
+}
+
+.botaoo2 {
+    float: right;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 28px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    font-family: Courier New;
+    font-size: 17px;
+    text-decoration: none;
+    text-shadow: -1px 1px 50px #2f6627;
+}
+
+.mySlides {
+
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 800px;
+}
+
+
+
+.caixa {
+    box-sizing: border-box;
+    text-align: justify;
+    margin-top: 20px;
+    margin: 60px;
+    height: 300px;
+    width: 500px;
+    color: rgb(255, 255, 255);
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem rgb(255, 255, 255),
+        0 0 2rem #316D71,
+        0 0 0.8rem #316D71,
+        0 0 2.8rem #316D71,
+        inset 0 0 1.3rem #316D71;
+}
+
+.caixa:hover {
+    object-fit: cover;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+#photo {
+    float: right;
+    height: 100%;
+    width: 500px;
+   
+}
+
+
+#text {
+    font-family: 'Fira Mono', monospace;
+    text-align: justify;
+    padding-top: 10%;
+    padding-left: 10%;
+    color: white;
+    font-size: 15px;
+    height: 400px;
+    width: 800px;
+    margin-bottom: 100px;
+
+}
+
+
+.buttonregister> button {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 10%, #7BC9D1 50%);
+    border: 0;
+    letter-spacing: 3px;
+    line-height: 88px;
+    border-radius: 10px;
+    outline: transparent;
+
+
+}
+
+
+.footer {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    border: 0.2rem solid #fff;
+    border-left: none;
+    border-right: none;
+    
+    font-size: 30px;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem rgb(255, 255, 255),
+        0 0 2rem #316D71,
+        0 0 0.8rem #316D71,
+        0 0 2.8rem #316D71,
+        inset 0 0 1.3rem #316D71;
+}
+
+span {
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.btn {
+    display:block;
+    height: 300px;
+    width: 300px;
+    /* border-radius: 50%; */
+    border: 1px solid red;
+  }
