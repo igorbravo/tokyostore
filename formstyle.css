@@ -1,26 +1,21 @@
-* {
-  padding: 0;
-  margin: 0
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 body {
-  align-items: center;
-  background-image: url(4.jpg);
+  /* background-image: url(modell.jpeg); */
   background-size: cover;
-  display: flex;
-  justify-content: center;
- 
+  background-color: black;
 }
 
-.container {
-  background-color: white;
-  height: 80%;
+.teste {
+  height: 100%;
 }
 
 form {
-  background-color: transparent;
   border-radius: 20px;
-  box-sizing: border-box;
   height: 500px;
   padding: 20px;
   width: 320px;
@@ -80,7 +75,6 @@ form {
 }
 
 
-
 .input {
   background-color: white;
   border-radius: 12px;
@@ -95,7 +89,6 @@ form {
 }
 
 .cut {
-  background-color: transparent;
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -144,7 +137,6 @@ form {
   background-color: #03576B;
   border-radius: 12px;
   border: 0;
-  box-sizing: border-box;
   color: #eee;
   cursor: pointer;
   font-size: 18px;
@@ -164,4 +156,22 @@ form {
   transform: scale(1.1);
   transition: all .2s ease-in-out;
   cursor: pointer;
+}
+
+@media only screen and (max-device-width: 900px) and (max-device-height:900px) {
+
+body {
+ margin-left: 5%;
+}
+
+form {
+  display: table;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 20px;
+  box-sizing: border-box;
+    height: 300px;
+    
+}
+
 }
