@@ -8,6 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
   <link rel="shortcut icon" type="imagex/png" href="icon.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -70,13 +74,19 @@
         Aenean ut massa metus. Duis fringilla, nulla
         eget suscipit fringilla, augue arcu finibus
         </p>
-            
-<div class="card 1">
-  <div class="card_image"> <img src="model.jpg" /> </div>
-  <div class="card_title title-white">
-    <p>Model 1</p>
-  </div>
-</div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="model.jpg" /> </div>
+            <div class="swiper-slide"><img src="model.jpg" /> </div>
+            <div class="swiper-slide"><img src="model.jpg" /> </div>
+            <div class="swiper-slide"><img src="model.jpg" /> </div>
+            <div class="swiper-slide"><img src="model.jpg" /> </div>
+            <div class="swiper-slide"><img src="model.jpg" /> </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
         <p>
         dolor, at laoreet dolor nibh nec nunc.
         Donec turpis diam, feugiat et leo vitae,
@@ -119,7 +129,7 @@
 </body>
 
 <script>
-  var slideIndex = 1;
+  let slideIndex = 1;
   showDivs(slideIndex);
 
   function plusDivs(n) {
@@ -127,8 +137,8 @@
   }
 
   function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
+    let i;
+    let x = document.getElementsByClassName("mySlides");
     if (n > x.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = x.length }
     for (i = 0; i < x.length; i++) {
@@ -141,5 +151,18 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
 
 </html>
