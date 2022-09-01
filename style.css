@@ -407,5 +407,9 @@ h2 {
         height: 10px;
       }
 
+      .text > p  {
+        margin-top: 1rem;
+      }
+
 
 }

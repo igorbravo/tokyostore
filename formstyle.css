@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: white;
-  background-image: url('/form.jpeg')
+  background-image: url('images/form.jpeg')
 }
 
 .arrow {
