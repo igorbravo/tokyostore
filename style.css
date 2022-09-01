@@ -42,6 +42,35 @@ h2 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
 #botoes {
     display: flex;
     top: 20px;
@@ -115,14 +144,6 @@ ul li:hover {
 .container {
     height: 100%;
     width: 100%;
-}
-
-.aa {
-    background-size: cover;
-    background-image: url("models1.jpg");
-    display: flex;
-    object-fit: cover;
-    height: 100%;
 }
 
 img {
@@ -349,6 +370,46 @@ h2 {
         border-radius: 10px;
         outline: transparent;
     }
+
+    .swiper {
+      box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+        cursor: pointer;
+        transition: 0.4s;
+      }
+
+    
+      .swiper-slide {
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      .swiper-pagination {
+        width: 10px;
+        height: 10px;
+      }
+
+      .text > p  {
+        margin-top: 1rem;
+      }
 
 
 }
