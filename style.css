@@ -40,14 +40,17 @@ header {
 h2 {
     text-align: center;
     font-family: 'Bebas Neue', cursive;
+    color: white;
 }
 
+.about {
+    display: flex;
+  }
 
 .swiper {
-    width: 60%;
+    border: 1px solid lightblue;
+    width: 30%;
     height: 500px;
-   float: left; 
-   border: 1px solid blue;
   }
 
   .swiper-slide {
@@ -71,23 +74,40 @@ h2 {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
+
 
   .text1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
-    float: right;
-    width: 500px;
+    width: 50%;
     color: white;
     text-align: center;
     margin-right: 1rem;
   }
 
-  .testeee {
-    height: 510px;
+  .text2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: 50%;
+    color: white;
+    text-align: center;
+    margin-right: 1rem;
   }
+
+  .text3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: 50%;
+    color: white;
+    text-align: center;
+    margin-right: 1rem;
+  }
+
 
 #botoes {
     display: flex;
@@ -170,12 +190,6 @@ img {
     object-fit: cover;
 }
 
-#photo {
-    float: right;
-    height: 100%;
-    width: 500px;
-
-}
 
 #text {
     font-family: 'Fira Mono', monospace;
@@ -345,7 +359,19 @@ span {
         display: none;
     }
 
+    .swiper {
+        width: 100%;
+       float: none; 
+      }
 
+      .text1, .text2, .text3{
+        float: none;
+        width: 100%;
+    }
+
+      .about {
+        display: inline;
+      }
 
     .w-100   {
         object-fit: cover;
