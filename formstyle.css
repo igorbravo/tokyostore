@@ -1,14 +1,16 @@
-html {
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+ body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-}
-
-body {
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: white;
-  background-image: url('images/form.jpeg')
+  background-image: url('images/3.jpg')
 }
 
 .arrow {
@@ -22,7 +24,8 @@ body {
 form {
   border-radius: 20px;
   padding: 20px;
-  width: 100%;
+position: absolute;
+left: 40%;
 }
 
 .titulo {
@@ -43,36 +46,32 @@ form {
 .input1 {
   height: 50px;
   position: relative;
-  width: 100%;
   margin-top: 40px;
 }
 
 .input2 {
   height: 50px;
   position: relative;
-  width: 100%;
   margin-top: 40px;
   margin-top: 30px;
+
 }
 
 .input3 {
   height: 50px;
   position: relative;
-  width: 100%;
   margin-top: 40px;
   margin-top: 30px;
 }
 .input4 {
   height: 50px;
   position: relative;
-  width: 100%;
   margin-top: 40px;
   margin-top: 30px;
 }
 .input5 {
   height: 50px;
   position: relative;
-  width: 100%;
   margin-top: 40px;
   margin-top: 30px;
 }
@@ -163,9 +162,14 @@ form {
 
 @media only screen and (max-device-width: 900px) and (max-device-height:900px) {
 
+
 body {
- margin-left: 5%;
+    min-height: 100vh;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-image: url('images/form.jpeg')
 }
+
 
 form {
   display: table;
@@ -174,7 +178,7 @@ form {
   border-radius: 20px;
   box-sizing: border-box;
     height: 300px;
-    
+    position: inherit;
 }
 
 }
