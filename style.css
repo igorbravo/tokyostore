@@ -39,12 +39,21 @@ header {
 
 h2 {
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
 }
 
+.about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 .swiper {
-    width: 100%;
-    height: 100%;
+    border: 1px solid lightblue;
+    width: 25%;
+    height: 75vh;
+    position: absolute;
+    right: 10px;
   }
 
   .swiper-slide {
@@ -71,6 +80,39 @@ h2 {
     object-fit: contain;
   }
 
+
+  .text1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: 50%;
+    color: white;
+    text-align: center;
+    margin-left: 1rem;
+  }
+
+  .text2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: 50%;
+    color: white;
+    text-align: center;
+    margin-left: 1rem;
+  }
+
+  .text3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: 50%;
+    color: white;
+    text-align: center;
+
+    margin-left: 1rem;
+  }
+
+
 #botoes {
     display: flex;
     top: 20px;
@@ -85,6 +127,11 @@ a {
     text-decoration: none;
     color: white;
     margin-left: 30px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 ul li:hover {
@@ -141,10 +188,7 @@ ul li:hover {
     text-shadow: -1px 1px 50px #2f6627;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
-}
+
 
 img {
     width: 100%;
@@ -152,12 +196,6 @@ img {
     object-fit: cover;
 }
 
-#photo {
-    float: right;
-    height: 100%;
-    width: 500px;
-
-}
 
 #text {
     font-family: 'Fira Mono', monospace;
@@ -229,10 +267,6 @@ span {
     transition: ease 0.3s;
 }
 
-.social:hover > li {
-    opacity: 0.5;
-}
-
 .social:hover > li:hover {
     opacity: 1;
 }
@@ -255,7 +289,6 @@ span {
     width: 300px;
     height: 300px;
     border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     transition: 0.4s;
   }
@@ -285,8 +318,6 @@ span {
   
   .card:hover {
     transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
   }
   
   .title-white {
@@ -296,7 +327,6 @@ span {
   .title-black {
     color: black;
   }
-  
   
 
 @media only screen and (max-device-width: 900px) and (max-device-height:900px) {
@@ -331,7 +361,18 @@ span {
         display: none;
     }
 
+    .swiper {
+        width: 100%;
+       float: none; 
+       position: inherit;
+      }
 
+      .text1, .text2, .text3{
+        float: none;
+        width: 100%;
+    }
+
+    
 
     .w-100   {
         object-fit: cover;
