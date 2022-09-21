@@ -29,6 +29,23 @@
             Neo Tokyo
         </title>
     </head>
+    <script>
+
+let links = ['https://www.instagram.com/bravo_igor/', 'https://www.linkedin.com/in/igor-bravo-921533227/', 'https://github.com/igorbravo?tab=repositories']
+
+function instagram() {
+    window.location.href=links[0];
+}
+
+function linkedin() {
+    window.location.href= links[1];
+}
+
+function github() {
+    window.location.href= links[2];
+}
+    
+    </script>
 
     <body>
         <div id="logo">
@@ -167,15 +184,15 @@
             <div id="social-test">
                 <ul class="social">
                     <li>
-                      <i onclick="window.location.replace('www.instagram.com/bravo_igor')" class="fa fa-instagram" aria-hidden="true"></i> 
+                      <i onclick="instagram()" class="fa fa-instagram" aria-hidden="true"></i>  
                     </li>
 
                     <li>
-                        <i onclick="window.location.replace('github.com/igorbravo?tab=repositories')" class="fa fa-github" aria-hidden="true"></i>
+                        <i onclick="github()" class="fa fa-github" aria-hidden="true"></i>
                     </li>
 
                     <li>
-                        <i onclick="window.location.replace('www.linkedin.com/in/igor-bravo-921533227/')" class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i onclick="linkedin()" class="fa fa-linkedin" aria-hidden="true"></i>
                     </li>
                 </ul>
                 <span>
